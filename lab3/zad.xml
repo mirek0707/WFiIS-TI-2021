@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<?xml-stylesheet type="text/css" href="zad.css"?>
+<!DOCTYPE biblioteka SYSTEM "zad.dtd" >
+<biblioteka> 
+    <dzialy> 
+        <dzial>
+            <nazwa>Fantasy</nazwa>
+            <ksiazka>
+                <tytul>Zwiadowcy</tytul>
+                <autor>
+                    <imie>John</imie>
+                    <nazwisko>Flanagan</nazwisko>
+                </autor>
+                <cena>37</cena>
+            </ksiazka>
+            <ksiazka>
+                <tytul>Władca Pierścieni</tytul>
+                <autor>
+                    <imie>John Ronald Reuel</imie>
+                    <nazwisko>Tolkien</nazwisko>
+                </autor>
+                <cena>24</cena>
+            </ksiazka>
+            <ksiazka>
+                <tytul>Wiedźmin</tytul>
+                <autor>
+                    <imie>Andrzej</imie>
+                    <nazwisko>Sapkowski</nazwisko>
+                </autor>
+                <cena>52</cena>
+            </ksiazka>
+        </dzial>
+        <dzial>
+            <nazwa>Powieść historyczna</nazwa>
+            <ksiazka>
+                <tytul>Krzyżacy</tytul>
+                <autor>
+                    <imie>Henryk</imie>
+                    <nazwisko>Sienkiewicz</nazwisko>
+                </autor>
+                <cena>18</cena>
+            </ksiazka>
+            <ksiazka>
+                <tytul>Potop</tytul>
+                <autor>
+                    <imie>Henryk</imie>
+                    <nazwisko>Sienkiewicz</nazwisko>
+                </autor>
+                <cena>20</cena>
+            </ksiazka>
+            <ksiazka>
+                <tytul>Nowa Kartagina</tytul>
+                <autor>
+                    <imie>Marek</imie>
+                    <nazwisko>Zatwarnicki</nazwisko>
+                </autor>
+                <cena>19</cena>
+            </ksiazka>
+        </dzial>
+        <dzial>
+            <nazwa>Kryminał</nazwa>
+            <ksiazka>
+                <tytul>Balwierz</tytul>
+                <autor>
+                    <imie>Katarzyna</imie>
+                    <nazwisko>Bonda</nazwisko>
+                </autor>
+                <cena>39</cena>
+            </ksiazka>
+            <ksiazka>
+                <tytul>Przepaść</tytul>
+                <autor>
+                    <imie>Remigiusz</imie>
+                    <nazwisko>Mróz</nazwisko>
+                </autor>
+                <cena>42</cena>
+            </ksiazka>
+        </dzial>
+    </dzialy> 
+</biblioteka>

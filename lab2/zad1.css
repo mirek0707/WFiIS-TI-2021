@@ -1,0 +1,38 @@
+header h1{ 
+	height: 18px; 
+	border:solid 2px brown; 
+	text-align:center; 
+	font-size: 20px; 
+	padding: 8px 0; 
+	margin: 0 auto;
+}
+table {
+	border: 2px solid darkblue;
+    border-collapse: collapse;
+    float: left;
+    margin-left: 30px;
+}
+thead {
+	background-color: cyan;
+}
+tbody th{
+	background-color: plum;
+}
+tbody tr:nth-child(odd){
+	background-color: greenyellow;
+}
+tbody tr:nth-child(even){
+	background-color: GhostWhite
+}
+tfoot{
+	background-color: wheat;
+}
+img{
+	width: 228px;
+	float: right;
+	margin-right: 30px;
+}
+article{
+	margin-left:  50px;
+	margin-right: 50px;
+}
