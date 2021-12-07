@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <title>Książki</title>
+    <meta charset="UTF-8">
+    <link rel="StyleSheet" href="zad4.css" type="text/css">
+</head>
+
+<body>
+    <fieldset>
+        <legend>Książki</legend>
+        <br>
+        <form action="cgi-bin/zad4.py" method="post">
+            <div>
+                <table>
+                <tr>
+                    <td>
+                        <label for="tytul">Tytuł:</label>
+                    </td>
+                    <td>
+                        <input class="i1" type="text" id="tytul" name="tytul"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="autor">Autor:</label>
+                    </td>
+                    <td>
+                        <input class="i1" type="text" id="autor" name="autor">
+                    </td>
+                </tr>
+                </table>
+            </div>
+            <br>
+            <input class="i2" type="submit" value="Wyślij">
+        </form>
+    </fieldset>
+</body>
+
+</html>

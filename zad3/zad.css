@@ -1,0 +1,63 @@
+thead {
+    background-color:orangered;
+    text-transform: uppercase;
+}
+thead th{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+tbody th{
+    text-transform: uppercase;
+    background-color:moccasin;
+    font-weight: normal;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+table{
+    border-width:8px;  
+    border-style:outset;
+    border-color:lightgray;
+}
+td, th{
+    border-width:1px;  
+    border-style:double;
+    border-color:lightgray;
+}
+tbody td{
+    background-color:azure;
+        margin-left: 8px;
+    margin-right: 8px;
+    padding-left: 5px ;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.naglowek{
+    color:black;
+}
+.cena{
+  min-width:60px;
+}
+.imie{
+  min-width:170px;
+}
+.nazwisko{
+  min-width:100px;
+}
+.numer{
+  min-width:80px;
+}
+.tytul{
+  min-width:150px;
+}
+div:nth-child(odd){
+    color:blue;
+}
+div:nth-child(even){
+    color:green;
+}

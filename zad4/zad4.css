@@ -1,0 +1,35 @@
+legend{
+    border: solid 5px;
+    border-color:gainsboro;
+    background-color:whitesmoke;
+    color:darkgrey;
+    font-weight: bold;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 3px;
+
+}
+div{
+    border: solid 2px;
+    background-color:lightseagreen;
+    border-color:mediumblue;
+    max-width:400px;
+}
+label{
+    padding-left: 4px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    padding-right: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.i1{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+fieldset{
+    max-width:430px;
+}
+form{
+    margin-left: 11px;
+}
