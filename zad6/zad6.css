@@ -1,0 +1,63 @@
+legend{
+    border: solid 5px;
+    border-color:gainsboro;
+    background-color:whitesmoke;
+    color:darkgrey;
+    font-weight: bold;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 3px;
+
+}
+div{
+    border: solid 1px;
+    background-color:MediumSpringGreen;
+    border-color:black;
+    max-width:400px;
+}
+label{
+    padding-left: 4px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    padding-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+fieldset{
+    max-width:430px;
+}
+form{
+    margin-left: 11px;
+}
+.td{
+    min-width: 190px;
+    padding-left: 2px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    border:solid 2px white;
+}
+.i1{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.t {
+    border: 2px solid darkblue;
+    border-collapse: collapse;
+    float: left;
+    margin-left: 30px;
+}
+.th {
+    background-color: LemonChiffon ;
+}
+.t tbody tr:nth-child(odd){
+    background-color: MintCream;
+}
+.t tbody tr:nth-child(even){
+    background-color:OldLace  ;
+}
+.t tbody td{
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top:2px;
+    padding-bottom:2px
+}
