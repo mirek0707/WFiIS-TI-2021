@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+    <head>
+        <meta charset="UTF-8">
+        <title>Zadanie6a</title>
+        <link rel="StyleSheet" href="zad6a.css" type="text/css">
+    </head>
+    <body>
+        <form method="post" id="draw">
+            <table>
+                <tr>
+                    <td class="td1">
+                        <label for="x">Podaj współrzędne środka: </label>
+                    </td>
+                    <td>
+                        <input type="text" id="x" name="x"><br>
+                    </td>
+                    <td>
+                        <input type="text" id="y" name="y"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td1">
+                        <label for="r">Podaj promień: </label>
+                    </td>
+                    <td colspan="2">
+                        <input type="text" id="r" name="r">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <input type="submit" value="Wykonaj">
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <br>
+        <div class="canvas">
+            <canvas id="Canvas" width="600" height="400"></canvas>
+            <script type="text/javascript">
+                var canv = document.getElementById('Canvas');
+                var context = canv.getContext('2d');
+
+                context.font = "bold 12px sans-serif";
+                context.fillText("rysunek canvas", 2, 398);
+                function circleCanvas(x, y, r) {
+                    if (canv.getContext) {
+                        context.clearRect(0, 0, 600, 400);
+                        var h = canv.offsetHeight;
+                        var w = canv.offsetWidth;
+                        canv.width = w;
+                        if (x > w)
+                            x = w;
+                        if (y > h)
+                            y = h;
+                        if (x < 0)
+                            x = 0;
+                        if (y < 0)
+                            y = 0;
+                        if (parseInt(x) - parseInt(r) < 0)
+                            r = x;
+                        if (parseInt(x) + parseInt(r) > w)
+                            r = parseInt(w) - parseInt(x);
+                        if (parseInt(y) - parseInt(r) < 0)
+                            r = y;
+                        if (parseInt(y) + parseInt(r) > h)
+                            r = parseInt(h) - parseInt(y);
+                        context.arc(x, y, r, 0, 2 * Math.PI, false);
+                        context.strokeStyle = '#FF0000';
+                        context.lineWidth = 1;
+                        context.stroke();
+                    }
+                };
+                var form = document.getElementById('draw');
+                form.addEventListener('submit', function (e) {
+                    e.preventDefault();
+                    circleCanvas(form.x.value, form.y.value, form.r.value);
+                    context.font = "bold 12px sans-serif";
+                    context.fillText("rysunek canvas", 2, 398);
+                });
+            </script>
+            
+        </div>
+        <div class="svg">
+            <svg id="svg" width="600" height="400">
+                <text x="2" y="398" font-weight="bold">rysunek svg</text>
+            </svg>
+            <script type="text/javascript">
+                function circleSvg(x, y, r) {
+                    var svg = document.getElementById('svg');
+                    var h = 400;
+                    var w = 600;
+                    if (x > w)
+                        x = w;
+                    if (y > h)
+                        y = h;
+                    if (x < 0)
+                        x = 0;
+                    if (y < 0)
+                        y = 0;
+                    if (parseInt(x) - parseInt(r) < 0)
+                        r = x;
+                    if (parseInt(x) + parseInt(r) > w)
+                        r = parseInt(w) - parseInt(x);
+                    if (parseInt(y) - parseInt(r) < 0)
+                        r = y;
+                    if (parseInt(y) + parseInt(r) > h)
+                        r = h - parseInt(y);
+                     
+                    var circleGraphics = `<circle cx="`+ x + `" cy="` + y + `" r="` + r + `" stroke="black" stroke-width="0" fill="red" />
+                    <text x="2" y="398" font-weight="bold">rysunek svg</text>`;
+                    svg.innerHTML = circleGraphics;
+                };
+                var form = document.getElementById('draw');
+                form.addEventListener('submit', function (e) {
+                    e.preventDefault();
+                    circleSvg(form.x.value, form.y.value, form.r.value);
+                });
+            </script>
+        </div>
+    </body>
+</html>

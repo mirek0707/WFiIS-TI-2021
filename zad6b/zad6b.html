@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+   <title>Zadanie 6b</title>
+   <script src="zad6b.js"></script>
+   <meta charset="UTF-8">
+</head>
+
+<body>
+   <p>
+      <input type="button" value="Pierwszy zestaw" onclick="wczytajPlik(1, 'opcje');" />
+      <input type="button" value="Drugi zestaw" onclick="wczytajPlik(2, 'opcje');" />
+   </p>
+   <p>
+      <select id="opcje" onChange="zmienListe('div', 'opcje')">
+         <option>Kliknij jeden z przycisków</option>
+      </select>
+   </p>
+   <div id="div">
+      <p>Tu pojawi się wybrana opcja.</p>
+   </div>
+</body>
+
+</html>
